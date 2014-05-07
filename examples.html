@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+<title>Tikslus Sticky examples</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tikslussticky.js"></script>
+<script type="text/javascript" src="js/rainbow.min.js"></script>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/github.css" />
+<style>
+body{
+padding:20px;
+}
+</style>
+</head>
+<body>
+<h1 class="main_heading">Tikslus Sticky</h1>
+                
+                   
+                
+                <p>Tikslus Sticky allows any HTML content to stick to screen when user scrolls down</p>
+                <p>You can see live examples on this page</p>
+                    
+                <p>Include jquery,tikslussticky.js files </p>
+<pre>
+<code data-language="javascript">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/tikslussticky.js"></script>
+
+</code>
+</pre>	
+                
+                <h4 class="heading">Example 1: Simple text </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+                    $.fn.tikslussticky({
+                    content:'hello world !',
+                    customID:'hello',
+                    stickAt:'center-left'
+                    
+                    });
+                </code>
+                </pre>
+                
+                <!-- code implementation -->
+                
+                <script language="javascript">
+                    $.fn.tikslussticky({
+                    content:'hello world !',
+                    customID:'hello',
+                    stickAt:'center-left'
+                    
+                    });
+                    </script>
+                
+                    
+                      <h4 class="heading">Example 2: User Registration Link </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+                    $.fn.tikslussticky({
+                    content:"<div style='width:100px;height:50px'><a href='#'>Sign Up now !</a></div>",
+                    customID:'signup',
+                    stickAt:'center-right'
+                    
+                    });
+                </code>
+                </pre>
+                 <!-- code implementation-->
+                 <script language="javascript">
+                    
+                     $.fn.tikslussticky({
+                    content:"<a href='#'>Sign Up now !</a>",
+                    customID:'signup',
+                    stickAt:'center-right'
+                    
+                    });
+                    
+                     </script>
+                    
+                         <h4 class="heading">Example 3: Print command </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+                    $.fn.tikslussticky({
+                    content:"<div style='height:50px;width:120px;'><a href='#'>PRINT</a></div>",
+                    customID:'signup',
+                    stickAt:'top-center'
+                    
+                    });
+                </code>
+                </pre>
+                 <!-- code implementation-->
+                     <script language="javascript">
+                                $.fn.tikslussticky({
+                    content:"<div style='height:50px;width:120px'><a href='#'>PRINT</a></div>",
+                    customID:'print',
+                    stickAt:'top-center'
+                    
+                    });
+                    
+                         </script>
+                     
+                  
+                                                <h4 class="heading">Example 4: Advertisment Banner </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+                    $.fn.tikslussticky({
+                    content:"<div><a href='#'><img src='banner.jpg'/></a></div>",
+                    customID:'signup',
+                    stickAt:'bottom-center'
+                    
+                    });
+                </code>
+                </pre>
+                 <!-- code implementation-->
+                    <script language="javascript">
+                                  $.fn.tikslussticky({
+                    content:"<div style='display:block'><a href='#'><img src='banner.jpg'/></a></div>",
+                    customID:'banner',
+                    stickAt:'bottom-center'
+                    
+                    });
+                        </script>
+                        
+                        
+                        
+                  <h4 class="heading">Example 5: Subscribe </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+                    $.fn.tikslussticky({
+                    content:"<div><form method='post' action='some action'><div><label>Email id:</label><input type='text' name='email'></div><div><input type='button' value='Subscribe'></div></form></div>",
+                    customID:'subscribe',
+                    stickAt:'top-right'
+                    
+                    });
+                </code>
+                </pre>
+                
+                <!-- code implementation -->
+                
+                <script language="javascript">
+                     $.fn.tikslussticky({
+                    content:"<div><form method='post' action='some action'><div><label>Email id:</label><input type='text' name='email'></div><div><input type='button' value='Subscribe'></div></form></div>",
+                    customID:'subscribe',
+                    stickAt:'top-right'
+                    
+                    });
+                    
+                    </script>
+                
+               
+                              
+                  <h4 class="heading">Example 6: Download </h4>
+                <p>Javascript</p>
+		<pre>
+		<code data-language="javascript">
+              $.fn.tikslussticky({
+                    content:"<a href='#'>Download</a>",
+                    customID:'download',
+                    stickAt:'bottom-left'
+                    
+                    });  
+                </code>
+                </pre>
+                
+                    
+                
+                 <!-- code implementation-->
+                 <script language="javascript">
+                      $.fn.tikslussticky({
+                    content:"<a href='#'>Download</a>",
+                    customID:'download',
+                    stickAt:'bottom-left'
+                    
+                    });  
+                     </script>
+                   
+                     
+                                     
+                  <h4 class="heading">Example 7: Simple text Stick At 'top-left' </h4>
+                <p>Javascript</p>
+		<pre>
+<code data-language="javascript">
+	   $.fn.tikslussticky({
+                    content:"Sticky me",
+                    customID:'hellosticky',
+                    stickAt:'top-left'
+                    
+                    });  
+                </code>
+                </pre>
+                  
+                     
+                     <script language="javascript">
+                      $.fn.tikslussticky({
+                    content:"Sticky me",
+                    customID:'hellosticky',
+                    stickAt:'top-left'
+                    
+                    });  
+                     </script>
+                     
+                 <br/>
+                 <br/>
+                 
+                 <table width="100%" class="table">
+		<tr>
+		<th>Parameter</th><th>Default value</th><th>Allowed Value</th><th>Description</th>
+		</tr>
+		<tr>
+		<td>Content</td><td>''</td><td>Any HTML content</td><td>Content displayed in sticky</td>
+		</tr>
+                
+                <tr>
+		<td>stickAt</td><td>'top-left'</td><td>Can Be: top-left,top-center,top-right,center-left,center-right,bottom-left,bottom-right,bottom-center,custom</td><td>Defines the postion</td>
+		</tr>
+                
+                <tr>
+                    <td>bkColor</td><td>#000</td><Td>Valid color code (HEX value)</Td><Td>Background color of stikcy</td>
+                </tr>
+                     
+                <tr>
+		<td>fontColor</td><td>#fff</td><td>Valid color code (HEX value)</td><td>Font color</td>
+		</tr>
+                <tr>
+		<td>opacity</td><td>0.7</td><td>value from 0-1</td><td>Opacity of sticky</td>
+		</tr>
+                 
+                <tr>
+		<td>customClass</td><td>''</td><td>Any css class</td><td>You can apply a custom css class to change the look of sticky</td>
+		</tr>
+                
+                <tr>
+		<td>fontSize</td><td>14</td><td>Valid font size</td><td>Font size used in sticky</td>
+		</tr>
+                
+                <tr>
+		<td>fontBold</td><td>TRUE</td><td>True OR False</td><td>Font are shown bold if this property is set to TRUE</td>
+		</tr>
+                
+                <tr>
+		<td>padding</td><td>5px</td><td>Text padding with 'px'</td><td>Padding applied to sticky</td>
+		</tr>
+                
+                
+                <tr>
+		<td>width</td><td>''</td><td>Valid width for sticky</td><td>Custom width applied to sticky</td>
+		</tr>
+                
+                <tr>
+		<td>height</td><td>''</td><td>Valid height for sticky</td><td>Custom Height applied to sticky</td>
+		</tr>
+                
+                <tr>
+                    <td><ul>
+                            <li>customLeft</li>
+                            <li>customRight</li>
+                            <li>customTop</li>
+                            <li>customBottom</li>
+                        </ul></td><td>''</td><td>valid values in pixel (with px)</td><td>Custom positions will only apply if you set stickAt:'custom'
+                        <br/>
+                        <p>Example</p>
+                        <pre>
+                        <code data-language="javascript">
+   $.fn.tikslussticky({
+                    content:"stick at custom position",
+                    customID:'custom122',
+                    stickAt:'custom',
+                    customLeft:'60px',
+                    customRight:'',
+                    customTop:'100px',
+                    customBottom:''
+                    
+                    });  
+                        </code>
+                        </pre>
+                        </td>
+		</tr>
+                </table>
+                		
+		
+
+</body>
+
+
+
+
+</html>
